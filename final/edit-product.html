@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Product - EcoFinds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">EcoFinds</a></h1>
+    </header>
+    <main class="form-container">
+        <h2>Edit Your Product</h2>
+        <form id="edit-product-form">
+            <div class="form-group">
+                <label for="title">Product Title</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select id="category" name="category" required>
+                    <option value="Apparel">Apparel</option>
+                    <option value="Furniture">Furniture</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Books">Books</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="price">Price ($)</label>
+                <input type="number" id="price" name="price" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="imageUrl">+ Add Image URL (Placeholder)</label>
+                <input type="url" id="imageUrl" name="imageUrl">
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </div>
+            <button type="submit">Save Changes</button>
+        </form>
+    </main>
+    <script src="edit-product.js"></script>
+</body>
+
+</html>
