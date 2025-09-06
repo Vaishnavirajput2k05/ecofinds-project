@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 150vh;
+    }
+    .user-box {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.618);
+      width: 500px;
+      height: 1050px;
+    }
+    .user-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .circle-image {
+      border-radius: 50%;
+      object-fit:cover;
+      border: 2px solid #333;
+    }
+    .user-box h3 {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    .user-box p {
+      width: 50%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    .Navigation-box {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.618);
+      width: 300px;
+    }
+    .user-box button {
+      width: 30%;
+      padding: 10px;
+      background: #000000;
+      border: none;
+      color: rgb(249, 249, 249);
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .Navigation-box button{
+      width: 60%;
+      padding: 10px;
+      background: #000000;
+      border: none;
+      color: rgb(249, 249, 249);
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    
+    .user-box button:hover {
+      background: #edf0f0;
+    }
+    .left-aligned button {
+      width: 10%;
+      padding: 10px;
+      background: #ffffff;
+      border: none;
+      color: rgb(255, 0, 0);
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .Cart{
+      border-radius: 50%;
+      object-fit:cover;
+      border: 2px solid #333;
+    }
+    
+    </style>
+</head>
+<body>
+   <div class = "user-box">
+    <center>
+        <img src="C:\Users\priya\Downloads\Gemini_Generated_Image_pe57h9pe57h9pe57.png" width="150" height="150" alt="Logo">
+        <br><br>
+    </center>
+    <div class="left-aligned">
+    <button type="button" >X</button>
+    <a class="Cart" href="">
+        <img align="right" width="50" height="50" src="C:\Users\priya\Downloads\download.png" alt="Your cart">
+    </a>
+    </div><br>
+    <h2><b>User Profile</b></h2>
+    <center>
+        <img width="150" height="150" src="C:\Users\priya\Downloads\classic wall\pexels-pixabay-531879.jpg" alt="Profile picture" class="circle-image">
+    <p id="Name">Name</p>
+    <p id="Email">Email Address</p>
+    <p id="Mobile No.">Mobile number</p>
+    <p id="Country">country</p>
+    <p id="State">State</p>
+    <p id="City">City</p>
+    <a href = ""><button class="btn" type="button"> Edit Profile</button>
+    </a><br><br>
+    <div class="Navigation-box">
+        <h2>Navigations</h2><br>
+        <button class="btn" type="button">My Favourites</button><br><br>
+        <button class="btn" type="button">My Purchases</button><br>
+    </div>
+    </center>
+  </div>
+</body>
+</html>
