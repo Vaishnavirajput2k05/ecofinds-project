@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product Details | EcoFinds</title>
+  <link rel="stylesheet" href="product.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="browse.html" class="back-link">← Back to products</a>
+    <h1 class="brand">EcoFinds</h1>
+  </header>
+
+  <main class="product-container">
+    <article class="product-card">
+      <section class="media">
+        <img
+         src="headphones.jpg"
+         alt="Wireless Headphones"
+         class="product-image"
+         id="mainImage"
+        
+
+        />
+        <!-- Optional thumbnails for a gallery later -->
+        <div class="thumbs">
+        <img src="Frontview.jpg"/>
+        <img src="topview.jpg"/>
+        <img src="boy.jpg"/>
+        <img src="headphones.jpg"/>
+        </div>
+
+          
+        
+      </section>
+
+      <section class="details">
+        <h2 class="product-title">Wireless Headphones</h2>
+        <p class="product-category"><strong>Category:</strong> Electronics</p>
+        <p class="product-price">₹2,499</p>
+
+        <p class="product-description">
+          Experience immersive sound with eco-friendly materials. Up to 20 hours
+          of battery life, active noise cancellation, and comfortable ear cushions
+          for all-day listening.
+        </p>
+
+        <ul class="product-meta">
+          <li><strong>Condition:</strong> New</li>
+          <li><strong>Warranty:</strong> 1 year</li>
+          <li><strong>Ships from:</strong> Jabalpur, MP</li>
+        </ul>
+
+        <div class="actions">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 EcoFinds</p>
+  </footer>
+
+  <!-- Optional: <script src="product.js"></script> -->
+   <script>
+  const mainImage = document.getElementById("mainImage");
+  const thumbnails = document.querySelectorAll(".thumbs img");
+
+  // Optional: highlight the first thumbnail
+  thumbnails[0].classList.add("selected");
+
+  thumbnails.forEach((thumb) => {
+    thumb.addEventListener("click", () => {
+      mainImage.src = thumb.src;
+      mainImage.alt = thumb.alt;
+
+      // Highlight selected thumbnail
+      thumbnails.forEach(t => t.classList.remove("selected"));
+      thumb.classList.add("selected");
+    });
+  });
+</script>
+</body>
+</html>
