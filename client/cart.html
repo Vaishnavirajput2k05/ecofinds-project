@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart - ShopEasy</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1 class="logo">🛒 ShopEasy</h1>
+    <a href="landingpage.html" class="back-btn">← Continue Shopping</a>
+  </header>
+
+  <!-- Cart Section -->
+  <main class="cart-container">
+
+    <h2>Your Cart</h2>
+
+    <div class="cart-items">
+
+      <!-- Product Card -->
+      <div class="cart-card">
+        <img src="shirt.jpg" alt="Casual Shirt">
+        <div class="cart-info">
+          <h3>Casual Shirt</h3>
+          <p>Price: ₹499</p>
+          <div class="quantity">
+            <button class="minus">-</button>
+            <input type="number" value="1" min="1">
+            <button class="plus">+</button>
+          </div>
+          <p class="item-total">Total: ₹499</p>
+        </div>
+      </div>
+
+      <!-- Product Card -->
+      <div class="cart-card">
+        <img src="jeans.jpg" alt="Blue Jeans">
+        <div class="cart-info">
+          <h3>Blue Jeans</h3>
+          <p>Price: ₹799</p>
+          <div class="quantity">
+            <button class="minus">-</button>
+            <input type="number" value="2" min="1">
+            <button class="plus">+</button>
+          </div>
+          <p class="item-total">Total: ₹1598</p>
+        </div>
+      </div>
+
+    </div>
+
+   <div id="cart-items"></div>
+
+<script>
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const cartContainer = document.getElementById("cart-items");
+
+  if (cart.length === 0) {
+    cartContainer.innerHTML = "<p>No items in cart</p>";
+  } else {
+    cart.forEach(item => {
+      cartContainer.innerHTML += `
+        <div class="cart-item">
+          <img src="${item.image}" width="100">
+          <h3>${item.name}</h3>
+          <p>₹${item.price}</p>
+        </div>
+      `;
+    });
+  }
+</script>
+
+
+
+  <script src="cart.js"></script>
+</body>
+</html>
