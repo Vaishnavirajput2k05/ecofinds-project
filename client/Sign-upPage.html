@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .signup-box {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.618);
+      width: 300px;
+    }
+    .signup-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .signup-box input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    .signup-box button {
+      width: 100%;
+      padding: 10px;
+      background: #219827;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .signup-box button:hover {
+      background: #219827;
+    }
+    .signup-box p {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .signup-box a {
+      color: #219827;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-box">
+    <h2><b>Sign Up</b></h2>
+    <form action="#" method="post"><center>
+      <input type="text" name="Display name" placeholder="Enter Display Name" required>
+      <input type="email" name="email" placeholder="Enter email Address" required>
+      <input type="password" name="password" placeholder="Enter Password" required>
+      <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+      <button type="submit"><b>Create Account</b></button>
+    </center>
+    </form>
+    <p>Do you already have an account? <a href="#">Login</a></p>
+  </div>
+</body>
+</html>
