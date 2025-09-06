@@ -1,0 +1,137 @@
+:root {
+  --bg: #f6f8fb;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --danger: #dc2626;
+  --ring: rgba(37, 99, 235, 0.35);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background-color: black;
+}
+
+.container {
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 380px;
+  background: var(--card);
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.brand {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.brand img {
+  display: block;
+  margin: 0 auto 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.subtitle {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 12px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  transition: box-shadow 0.15s, border-color 0.15s, background 0.15s;
+  background: #fff;
+}
+
+input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px var(--ring);
+}
+
+.error {
+  min-height: 16px;
+  color: var(--danger);
+  font-size: 12px;
+  margin: -4px 0 2px;
+}
+
+button {
+  margin-top: 8px;
+  padding: 12px 14px;
+  background: linear-gradient(180deg, var(--primary), var(--primary-hover));
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.05s ease-in, filter 0.15s;
+}
+
+button:hover { filter: brightness(1.02); }
+button:active { transform: translateY(1px); }
+button:disabled { opacity: 0.7; cursor: not-allowed; }
+
+.helper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.helper a {
+  color: var(--primary);
+  text-decoration: none;
+  cursor: not-allowed; /* placeholders for now */
+}
+
+.toast {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 13px;
+  color: #065f46;
+  background: #d1fae5;
+  border: 1px solid #a7f3d0;
+  padding: 8px 10px;
+  border-radius: 8px;
+  display: none;
+}
