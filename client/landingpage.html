@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Landing Page</title>
+  <link rel="stylesheet" href="Signin.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>ShopEasy</h1>
+    <input type="text" id="search" placeholder="Search products...">
+  </header>
+
+  <!-- Controls -->
+  <section class="controls">
+    <select id="sort">
+      <option value="">Sort By</option>
+      <option value="low-high">Price: Low to High</option>
+      <option value="high-low">Price: High to Low</option>
+      <option value="New Arrivels">New Arrivels</option>
+      <option value="Discount">Discount</option>
+
+    </select>
+    <select id="filter">
+      <option value="all">All Categories</option>
+      <option value="clothes">Clothes</option>
+      <option value="shoes">Shoes</option>
+      <option value="accessories">Accessories</option>
+      <option value="electronics">Electronics</option>
+    </select>
+  </section>
+
+  <!-- Products -->
+  <section class="products" id="product-list">
+    <!-- 50 Products -->
+    <!-- Clothes -->
+    <div class="product" data-category="clothes" data-price="499">
+      <img src="shirt.jpg" alt="Shirt">
+      <h3>Casual Shirt</h3>
+      <p>₹499</p>
+    </div>
+    <div class="product" data-category="clothes" data-price="799">
+      <img src="jeans.jpg" alt="Jeans">
+      <h3>Blue Jeans</h3>
+      <p>₹799</p>
+    </div>
+    <div class="product" data-category="clothes" data-price="999">
+      <img src="jacket.jpg" alt="Jacket">
+      <h3>Winter Jacket</h3>
+      <p>₹999</p>
+    </div>
+    <div class="product" data-category="clothes" data-price="399">
+      <img src="tshirt.jpg" alt="T-Shirt">
+      <h3>Graphic T-Shirt</h3>
+      <p>₹399</p>
+    </div>
+    <div class="product" data-category="clothes" data-price="899">
+      <img src="kurta.jpg" alt="Kurta">
+      <h3>Ethnic Kurta</h3>
+      <p>₹899</p>
+    </div>
+    <div class="product" data-category="clothes" data-price="599">
+      <img src="top.jpg" alt="Top">
+      <h3>Stylish Top</h3>
+      <p>₹599</p>
+    </div>
+    <div class="product" data-category="clothes" data-price="1299">
+      <img src="floraldress.jpg" alt="Dress">
+      <h3>Floral Dress</h3>
+      <p>₹1299</p>
+    </div>
+    <div class="product" data-category="clothes" data-price="699">
+      <img src="hoodie.jpg" alt="Hoodie">
+      <h3>Winter Hoodie</h3>
+      <p>₹699</p>
+    </div>
+    <div class="product" data-category="clothes" data-price="1099">
+      <img src="bodycon.jpg" alt="Bodycon">
+      <h3>Bodycon</h3>
+      <p>₹1099</p>
+    </div>
+    <div class="product" data-category="clothes" data-price="Saree">
+      <img src="saree.jpg" alt="Saree">
+      <h3>Saree</h3>
+      <p>₹800</p>
+    </div>
+
+    <!-- Shoes -->
+    <div class="product" data-category="shoes" data-price="1299">
+      <img src="runningshoes.jpg" alt="Shoes">
+      <h3>Running Shoes</h3>
+      <p>₹1299</p>
+    </div>
+    <div class="product" data-category="shoes" data-price="1599">
+      <img src="sneakers.jpg" alt="Sneakers">
+      <h3>Casual Sneakers</h3>
+      <p>₹1599</p>
+    </div>
+    <div class="product" data-category="shoes" data-price="999">
+      <img src="sandals.jpg" alt="Sandals">
+      <h3>Leather Sandals</h3>
+      <p>₹999</p>
+    </div>
+    <div class="product" data-category="shoes" data-price="1899">
+      <img src="loafers.jpg" alt="Loafers">
+      <h3>Office Loafers</h3>
+      <p>₹1899</p>
+    </div>
+    <div class="product" data-category="shoes" data-price="799">
+      <img src="flipflops.jpg" alt="Flip-Flops">
+      <h3>Flip-Flops</h3>
+      <p>₹799</p>
+    </div>
+    <div class="product" data-category="shoes" data-price="2199">
+      <img src="boots.jpg" alt="Boots">
+      <h3>Leather Boots</h3>
+      <p>₹2199</p>
+    </div>
+
+    <!-- Accessories -->
+    <div class="product" data-category="accessories" data-price="299">
+      <img src="watch.jpg" alt="Watch">
+      <h3>Stylish Watch</h3>
+      <p>₹499</p>
+    </div>
+    <div class="product" data-category="accessories" data-price="199">
+      <img src="cap.jpg" alt="Cap">
+      <h3>Black Cap</h3>
+      <p>₹199</p>
+    </div>
+    <div class="product" data-category="accessories" data-price="499">
+      <img src="bagpack.jpg" alt="Bag">
+      <h3>Travel Backpack</h3>
+      <p>₹499</p>
+    </div>
+    <div class="product" data-category="accessories" data-price="149">
+      <img src="glasses.jpg" alt="Sunglasses">
+      <h3>Sunglasses</h3>
+      <p>₹249</p>
+    </div>
+    <div class="product" data-category="accessories" data-price="99">
+      <img src="bracelet.jpg" alt="Bracelet">
+      <h3>Bracelet</h3>
+      <p>₹99</p>
+    </div>
+    <div class="product" data-category="accessories" data-price="399">
+      <img src="wallet.jpg" alt="Wallet">
+      <h3>Mens Wallet</h3>
+      <p>₹399</p>
+    </div>
+    <div class="product" data-category="accessories" data-price="599">
+      <img src="handbag.jpg" alt="Handbag">
+      <h3>Leather Handbag</h3>
+      <p>₹599</p>
+    </div>
+    <div class="product" data-category="accessories" data-price="249">
+      <img src="belt.jpg" alt="Belt">
+      <h3>Leather Belt</h3>
+      <p>₹249</p>
+    </div>
+    <div class="product" data-category="accessories" data-price="49">
+      <img src="hairband.jpg" alt="Hairband">
+      <h3>Hairband</h3>
+      <p>₹49</p>
+    </div>
+    <div class="product" data-category="accessories" data-price="319">
+      <img src="necklace.jpg" alt="Necklace">
+      <h3>Necklace</h3>
+      <p>₹319</p>
+    </div>
+
+
+    <!-- Electronics -->
+    <div class="product" data-category="electronics" data-price="14999">
+      <img src="phone.jpg" alt="Smartphone">
+      <h3>Smartphone</h3>
+      <p>₹14,999</p>
+    </div>
+    <div class="product" data-category="electronics" data-price="24999">
+      <img src="laptop.jpg" alt="Laptop">
+      <h3>Laptop</h3>
+      <p>₹24,999</p>
+    </div>
+    <div class="product" data-category="electronics" data-price="3999">
+      <img src="buds.jpg" alt="Headphones">
+      <h3>Wireless Headphones</h3>
+      <p>₹3,999</p>
+    </div>
+    <div class="product" data-category="electronics" data-price="8999">
+      <img src="smartwatch.jpg" alt="Smartwatch">
+      <h3>Smartwatch</h3>
+      <p>₹8,999</p>
+    </div>
+    <div class="product" data-category="electronics" data-price="5999">
+      <img src="camera.jpg" alt="Camera">
+      <h3>Digital Camera</h3>
+      <p>₹5,999</p>
+    </div>
+    <div class="product" data-category="electronics" data-price="1299">
+      <img src="mouse.jpg" alt="Mouse">
+      <h3>Wireless Mouse</h3>
+      <p>₹1,299</p>
+    </div>
+    <div class="product" data-category="electronics" data-price="2199">
+      <img src="keyboard.jpg" alt="Keyboard">
+      <h3>Mechanical Keyboard</h3>
+      <p>₹2,199</p>
+    </div>
+    <div class="product" data-category="electronics" data-price="499">
+      <img src="usb.jpg" alt="USB Cable">
+      <h3>USB Cable</h3>
+      <p>₹499</p>
+    </div>
+
+
+    <!-- (Repeat more sets until ~50 products total) -->
+  </section>
+
+
+  <script src="Signin.js"></script>
+
+  
+</body>
+
+</html>
