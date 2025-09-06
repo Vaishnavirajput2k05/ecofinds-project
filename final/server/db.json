@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "testuser",
+      "email": "test@example.com",
+      "password": "password123"
+    }
+  ],
+  "products": [
+    {
+      "id": 101,
+      "title": "Vintage Denim Jacket",
+      "description": "A cool denim jacket from the 90s.",
+      "category": "Apparel",
+      "price": 45,
+      "imagePlaceholder": "https://via.placeholder.com/150",
+      "ownerId": 1
+    },
+    {
+      "id": 102,
+      "title": "Old Wooden Chair",
+      "description": "A sturdy chair, perfect for a rustic look.",
+      "category": "Furniture",
+      "price": 75.5,
+      "imagePlaceholder": "https://via.placeholder.com/150",
+      "ownerId": 1
+    },
+    {
+      "title": "Freezer",
+      "category": "Furniture",
+      "price": 200,
+      "description": "good condition",
+      "id": 1757138223329,
+      "ownerId": 1,
+      "imagePlaceholder": "https://via.placeholder.com/150"
+    },
+    {
+      "title": "Lenovo THinkpad laptop",
+      "category": "Electronics",
+      "price": 35000,
+      "description": "i7 processor,GPI 4050RTX series",
+      "id": 1757138734969,
+      "ownerId": 1,
+      "imagePlaceholder": "https://via.placeholder.com/150"
+    }
+  ]
+}
